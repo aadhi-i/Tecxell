@@ -19,6 +19,55 @@
             z-index: -1;
             top: 0;
         }
+        #con{
+            overflow-x:auto;
+        }
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        th,
+        td {
+            padding: 15px;
+            background-color: rgba(255,255,255,0.2);
+            color: #fff;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        thead {
+            th {
+                background-color: #55608f;
+            }
+        }
+
+        tbody {
+            tr {
+                &:hover {
+                    background-color: rgba(255,255,255,0.3);
+                }
+            }
+            td {
+                position: relative;
+                &:hover {
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: -9999px;
+                        bottom: -9999px;
+                        background-color: rgba(255,255,255,0.2);
+                        z-index: -1;
+                    }
+                }
+            }
+        }
     </style>
     <script type="module" src="script.js"></script>
 </head>
@@ -62,12 +111,85 @@
     <!--Nav done here-->
 
     <!--Header Section-->
-    <div class="w-11/12 max-w-3xl text-center text-white mx-auto h-screen flex flex-col items-center justify-center gap-4">
-        <h1 class="text-5xl sm:text-6xl lg:text-[100px] z-10" style="font-family: Lexend;">Event Schedule</h1>
+    <div class="w-11/12 max-w-3xl text-center text-white mx-auto flex flex-col items-center gap-4">
+        <h1 class="text-3xl sm:text-4xl lg:text-[72px] mt-32 z-10" style="font-family: Lexend;">Event Schedule</h1>
     </div>
     <!--Header completed-->
-    </div>
+    <!--schedule-->
+    <div id="" class="w-full px-[12%] py-10  text-white">
+        <div id="con" class="w-full rounded-lg p-4 bg-[#6e0e94]/40 backdrop-blur">
+            <table class="max-w-2xl mx-auto">
+                <tr><th>SL No.</th>
+                <th>Event</th>
+                <th>Time</th>
+                <th>Location</th></tr>
 
+                <tr>
+                    <td>1</td>
+                    <td>Inauguration</td>
+                    <td>12:00 PM -12:30 PM</td>
+                    <td>Albert Einstein Hall</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Hackathon</td>
+                    <td>12:30 PM Onwards</td>
+                    <td>TBA</td>
+                </tr>
+                <tr><td>DAY-2 : </td><td>14-03-2025</td><td></td><td></td></tr>
+                <tr>
+                    <td>1</td>
+                    <td>Relay Coding Prelims</td>
+                    <td>09:30 AM - 10:00 AM</td>
+                    <td>TBA</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Relay Coding Finals</td>
+                    <td>10:30 AM - 11: 30 AM</td>
+                    <td>TBA</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Word Hunt Prelims</td>
+                    <td>10:00 AM - 10:30 AM</td>
+                    <td>TBA</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Efootball Prelims</td>
+                    <td>10:30 AM - 11:30 AM</td>
+                    <td>TBA</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Mini Games</td>
+                    <td>10:00 AM - 01:00 PM</td>
+                    <td>TBA</td>
+                </tr>
+                <tr><td>BREAK : </td><td>12:30 - 2:00</td><td></td><td></td></tr>
+                <tr>
+                    <td>6</td>
+                    <td>Music Club Event</td>
+                    <td>01:00 PM - 02:00 PM</td>
+                    <td>TBA</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Word Hunt Finals</td>
+                    <td>02:00 PM - 03:00 PM</td>
+                    <td>TBA</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Efootball Finals</td>
+                    <td>02:00 PM - 03:00 PM</td>
+                    <td>TBA</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--schedule ends here-->
 
     <!--Footer-->
     <div id="footer" class="mt-20">
@@ -83,6 +205,7 @@
             <p>© 2025 Adithya S Nair. All Rights Reserved</p>
         </div>
     </div>
+</div>
 
     <script>
         
