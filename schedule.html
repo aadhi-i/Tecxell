@@ -9,30 +9,29 @@
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="./tailwind.config.js"></script>
-    <link rel="shortcut icon" href="#">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Rubik+Glitch&display=swap" rel="stylesheet">
     <style>
-        #app1 canvas {
-        display: block;
-        position: fixed;
-        z-index: -1;
-        top: 0;
+        #app canvas {
+            display: block;
+            position: fixed;
+            z-index: -1;
+            top: 0;
         }
     </style>
-    <script type="module" src="script1.js"></script>
+    <script type="module" src="script.js"></script>
 </head>
-<body class="bg-slate-900 overflow-x-hidden">
-    <div id="app1">
+<body class="bg-slate-900 overflow-x-hidden" style="font-family: Lexend;">
+    <div id="app">
     <!--Navbar-->
     <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-gradient-to-t /80 to-[#6e0e94] backdrop-blur shadow-sm ">
         <a href="#top"><img src="./images/mitslogo.png" alt="logo" class="w-60 cursor-pointer mr-14 "></a>
         <ul class="hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 text-white">
             <li><a href="index.html#top" class="hover:text-black">Home</a></li>
             <li><a href="index.html#event" class="hover:text-black">Events</a></li>
-            <li><a href="schedule.html" class="hover:text-black">Schedule</a></li>
-            <li><a href="index.html#contact" class="hover:text-black">Contact Us</a></li>
+            <li><a href="#" class="hover:text-black">Schedule</a></li>
+            <li><a href="inde.html#contact" class="hover:text-black">Contact Us</a></li>
         </ul>
         <!--Instagram Button-->
         <div class="flex items-center gap-4 hover:-translate-y-1 duration-500">
@@ -55,7 +54,7 @@
             
             <li><a href="index.html#top" onclick="closeMenu()">Home</a></li>
             <li><a href="index.html#event" onclick="closeMenu()">Events</a></li>
-            <li><a href="schedule.html" onclick="closeMenu()">Schedule</a></li>
+            <li><a href="#" onclick="closeMenu()">Schedule</a></li>
             <li><a href="index.html#contact" onclick="closeMenu()">Contact Us</a></li>
             <li><a href="https://www.instagram.com/mits_mca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Check Out<ion-icon name="logo-instagram" class="w-10"></ion-icon></a></li>
         </ul>
@@ -64,48 +63,11 @@
 
     <!--Header Section-->
     <div class="w-11/12 max-w-3xl text-center text-white mx-auto h-screen flex flex-col items-center justify-center gap-4">
-        <h1 class="text-5xl sm:text-6xl lg:text-[114px]" style="font-family: Rubik Glitch;">Byte Race</h1>
-        <p class="max-w-2xl mx-auto"></p>
-
-        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4 relative">
-            <a href="https://forms.gle/oZXKSmo8DQKXV1np7" target="_blank" class="px-10 py-3 rounded-full bg-gradient-to-r from-[#3d2fdd] to-[#da2020] border hover:bg-white hover:text-black hover:-translate-y-1 duration-500 flex items-center gap-2">Register
-                <ion-icon name="person-add" class="w-5"></ion-icon>
-            </a>
-        </div>
+        <h1 class="text-5xl sm:text-6xl lg:text-[100px] z-10" style="font-family: Lexend;">Event Schedule</h1>
     </div>
     <!--Header completed-->
     </div>
 
-        <!--rules-->
-        <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20  text-white">
-            <div class="w-full rounded-lg p-4 bg-[#6e0e94]/40 backdrop-blur">
-            <h2 class="text-center mt-3 text-5xl">General Rules</h2>
-            <p class="max-w-2xl mx-auto mt-5 mb-12">⦿ The competition consists of two rounds: <br><br>
-
-                ⦿ Round 1: MCQ-based Screening Test <br><br>
-                
-                ⦿ The first round will be a multiple-choice question (MCQ) test focusing on various technologies such as programming languages, algorithms, data structures, web development, software engineering principles, and more. <br>
-                ⦿ Only those who perform well in this round will be selected to proceed to the next round. <br>
-                ⦿ Any form of malpractice (copying, discussing answers, or unauthorized help) will lead to immediate disqualification. <br>
-                ⦿ Participants must complete their registration before the competition starts. Incomplete registrations will be rejected. <br><br>
-                ⦿ Round 2: Coding Challenge <br><br>
-                
-                ⦿ After qualifying from Round 1, selected participants will enter the coding challenge. <br>
-                ⦿ This will be a Relay Coding challenge where two players will work together to solve the problem within 1 hour. <br>
-                ⦿ Each player will have 30 minutes to work on the problem, allowing for a dynamic and collaborative experience. <br>
-                ⦿ The challenge will test participants on their problem-solving skills, programming knowledge, and ability to work efficiently as a team. <br><br>
-                ⦿ Other Rules and Guidelines <br><br>
-                
-                ⦿ The use of smart devices, including smartwatches, mobile phones, or any digital gadgets, is strictly prohibited during both rounds. <br>
-                ⦿ The decision of the judges and organizers will be final and binding. <br>
-                ⦿ Event Coordinators: <br><br>
-                
-                Mr. Anurag R - 8137891170 <br>
-                Mr. Nandakumar - 7907150951 <br>
-                </p>
-            </div>
-        </div>
-        <!--rules ends here-->
 
     <!--Footer-->
     <div id="footer" class="mt-20">
